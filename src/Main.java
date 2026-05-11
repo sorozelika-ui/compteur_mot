@@ -18,7 +18,18 @@ public class Main {
 
             // compter les mots
             int compteur = mots.length;
+
+            // addition des mots
+            totalMots = totalMots + compteur;
         }
+            // affichage du mot compter
+            System.out.println("Total de mots : " + totalMots);
+
+            fileScanner.close();
     }
+        catch (Exception e) {
+
+            System.out.println("fichier introuvable");
     }
+}
 }
